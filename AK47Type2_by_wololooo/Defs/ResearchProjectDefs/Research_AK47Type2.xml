@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>Research_AK47Type2_by_wololooo</defName>
+    <label>AK-47 Type 2</label>
+    <description>The original AK-47's stamped receiver cracked. Four years of field reports said the same thing: the sheet metal couldn't handle sustained automatic fire over a full service life.
+
+The Type 2 answered with a milled receiver — machined from a solid steel billet. Heavier. More expensive. Slower to produce. But it didn't crack.
+
+Unlocks the AK-47 Type 2 — the first revision, the one that made the legend last.
+
+~wololooo
+    </description>
+
+    <tab>SovietGuns_by_wololooo</tab>
+
+    <baseCost>2800</baseCost>
+    <techLevel>Industrial</techLevel>
+
+    <prerequisites>
+      <li>Gunsmithing</li>
+      <li>PrecisionRifling</li>
+      <li>Soviet_Research_Program</li>
+      <li>Soviet_Assault_Rifle_Program</li>
+      <li>Research_AK47_by_wololooo</li>
+    </prerequisites>
+
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+
+    <researchViewX>8</researchViewX>
+    <researchViewY>1</researchViewY>
+
+  </ResearchProjectDef>
+
+</Defs>

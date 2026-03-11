@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+
+  <name>AK-47 Type 2 by Wololooo</name>
+  <author>wololooo</author>
+  <packageId>wololooo.AK47Type2</packageId>
+  <modVersion>1.0.0.0</modVersion>
+
+  <description>The first revision. The receiver problem, finally solved.
+
+The original AK-47 had a stamped sheet-metal receiver that cracked under sustained fire. The Type 2 replaced it with a milled receiver — machined from solid steel, heavier, slower to produce, but structurally uncompromising. It was the AK-47 that could actually be trusted to survive a full tour of service.
+
+The Krasnaya Zvezda filed it immediately after the original — the correction following the achievement, the weapon that made the legend durable.
+  </description>
+
+  <supportedVersions>
+    <li>1.6</li>
+    <li>1.5</li>
+  </supportedVersions>
+
+  <modDependencies>
+    <li>
+      <packageId>wololooo.sovietResearchTab</packageId>
+      <displayName>Soviet Rifle Research Tab</displayName>
+      <downloadUrl>https://github.com/wo1olooo/Soviet-Rifle-Research-Tab-by-Wololooo</downloadUrl>
+    </li>
+    <li>
+      <packageId>wololooo.ak47</packageId>
+      <displayName>AK-47 by Wololooo</displayName>
+      <downloadUrl>https://github.com/wo1olooo/AK47-RimworldMod</downloadUrl>
+    </li>
+  </modDependencies>
+
+  <url>https://github.com/wo1olooo/AK47Type2-RimworldMod</url>
+
+</ModMetaData>

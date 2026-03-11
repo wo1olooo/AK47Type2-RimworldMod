@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_AK47Type2_wololooo</defName>
+    <label>AK-47 Type 2</label>
+
+    <description>The original AK-47 had a problem nobody wanted to admit.
+
+The Type 1's stamped sheet-metal receiver — pressed and folded from flat steel — was a compromise born from manufacturing urgency. Get the rifle into production fast. Get it into soldiers' hands. Deal with the engineering problems later.
+
+Four years of field reports described the same failure mode: the receiver cracked under sustained automatic fire, particularly in cold weather when the metal became brittle. It didn't happen immediately. It happened after thousands of rounds, at the end of a service life the weapon was supposed to survive.
+
+The Type 2, introduced in 1951, replaced it entirely. A milled receiver — machined from a solid billet of steel by skilled machinists working to tight tolerances. Not pressed, not folded. Cut. The result was a receiver that didn't crack, didn't flex under fire, and didn't develop the hairline fractures that had been quietly retiring Type 1s ahead of schedule.
+
+The cost was weight. The milled receiver added nearly half a kilogram. It also added time — milling required more skilled labor and more factory hours than stamping. The Soviet military accepted both penalties because the alternative was a rifle that wore out.
+
+It fires the same 7.62x39mm round as the AK-47. The action is identical. The barrel is identical. The accuracy, the rate of fire, the handling — identical. What changed is invisible until the ten-thousandth round, when the Type 1 receiver starts to show its age and the Type 2 does not.
+
+The Krasnaya Zvezda filed it immediately after the original AK-47 in its archive — the correction following the achievement. The weapon that made the legend last long enough to matter.
+
+~wololooo
+    </description>
+
+    <graphicData>
+      <texPath>Things/Equipment/wololooo_AK47T2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.20</drawSize>
+    </graphicData>
+
+    <soundInteract>Interact_Rifle</soundInteract>
+
+    <recipeMaker>
+      <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+      <researchPrerequisite>Research_AK47Type2_by_wololooo</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <displayPriority>452</displayPriority>
+    </recipeMaker>
+
+    <thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
+
+    <statBases>
+      <WorkToMake>48000</WorkToMake>
+      <Mass>4.7</Mass>
+      <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.68</AccuracyShort>
+      <AccuracyMedium>0.65</AccuracyMedium>
+      <AccuracyLong>0.54</AccuracyLong>
+      <RangedWeapon_Cooldown>1.60</RangedWeapon_Cooldown>
+      <MarketValue>820</MarketValue>
+      <MaxHitPoints>145</MaxHitPoints>
+    </statBases>
+
+    <costList>
+      <Steel>110</Steel>
+      <ComponentIndustrial>7</ComponentIndustrial>
+      <WoodLog>20</WoodLog>
+    </costList>
+
+    <smeltable>true</smeltable>
+    <smeltProducts>
+      <Steel>75</Steel>
+    </smeltProducts>
+
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_AK47Type2_762x39mm</defaultProjectile>
+        <warmupTime>1.10</warmupTime>
+        <range>29.9</range>
+        <burstShotCount>4</burstShotCount>
+        <ticksBetweenBurstShots>11</ticksBetweenBurstShots>
+        <soundCast>wololooo_ak47type2_firing_sound</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>12</muzzleFlashScale>
+      </li>
+    </verbs>
+
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+      <li>AK47Type2</li>
+      <li>wololoooSovietPack</li>
+    </weaponTags>
+
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities><li>Blunt</li></capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>receiver</label>
+        <capacities><li>Blunt</li></capacities>
+        <power>11</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+
+    <comps>
+      <li Class="CompProperties_Biocodable" />
+    </comps>
+
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_AK47Type2_762x39mm</defName>
+    <label>7.62x39mm M43 Type 2 bullet</label>
+
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>14</damageAmountBase>
+      <speed>73</speed>
+      <stoppingPower>1.37</stoppingPower>
+      <armorPenetrationBase>0.22</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+
+</Defs>
